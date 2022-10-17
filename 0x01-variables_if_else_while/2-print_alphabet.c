@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - program that prints the alphabet in lowercase, followed by a new line.
+ * main - program that prints the alphabet in lowercase.
  * This program prints a the alphabet in lowercase
  * followed by a new line.
  * return: 0
@@ -11,6 +11,7 @@
 int main(void)
 {
 	int alph = 'a';
+	
 	while (alph <= 'z')
 	{
 		putchar(alph);
