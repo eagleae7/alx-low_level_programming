@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point
- * 
+ *
  * Description: 'generate a random number
  * tells us if the number is positive, negative or null'
  *
