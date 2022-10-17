@@ -2,8 +2,11 @@
 #include <stdio.h>
 
 /**
- * This program prints the alphabet in lower and upper case
+ * main - program that prints the alphabet in lowercase
  *
+ * Description: 'This program prints the alphabet in lower and upper case'
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
