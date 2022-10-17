@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - program that prints the alphabet in lowercase
+ * main - program that prints the alphabet in lowercase, and then in uppercase
  *
  * Description: 'This program prints the alphabet in lower and upper case'
  *
@@ -12,12 +12,12 @@
 int main(void)
 {
 	int alph = 'a';
-        int ALPH = 'A';
+	int ALPH = 'A';
 
 	while (alph <= 'z')
 	{
 		putchar(alph);
-		alph = alph + 1;   
+		alph = alph + 1;
 	}
 	while (ALPH <= 'Z')
 	{
