@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
+ * main - 
  * This program prints a the alphabet in lowercase
  * followed by a new line.
- *
+ * return: 0 success
  */
 
 int main(void)
