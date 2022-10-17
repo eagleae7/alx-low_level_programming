@@ -3,9 +3,12 @@
 #include <stdio.h>
 
 /**
- * This program do the following things :
- * generate a random number
- * tells us if the number is positive, negative or null
+ * main - Entry point
+ * 
+ * Description: 'generate a random number
+ * tells us if the number is positive, negative or null'
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
