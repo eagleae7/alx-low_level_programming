@@ -5,7 +5,7 @@
  * two two-digit
  * The numbers should range from 0 to 99
  * The two numbers should be separated by a space
- * All numbers should be printed with two digits. 
+ * All numbers should be printed with two digits.
  * 1 should be printed as 01
  * The combination of numbers must be separated by comma, followed by a space
  * The combinations of numbers should be printed in ascending order
