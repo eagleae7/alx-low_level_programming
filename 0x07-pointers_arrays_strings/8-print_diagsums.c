@@ -7,17 +7,20 @@
  * @size: The size of the matrix.
  * Return: none
  */
-
 void print_diagsums(int *a, int size)
 {
-    int i;
-    int x = 0;
-    int y = 0;
+	int i, j, sum1 = 0, sum2 = 0, st1, st2;
 
-    for (i = 0; i < size; i++)
-    {
-        x += a[(i * size) + i];
-        y += a[(size - 1) + ((size - 1) * i)];
-    }
-    printf("%d, %d\n", x, y);
+	for (i = 0; i <= (size - 1); i++)
+	{
+		st1 =  (size + 1) * i;
+		sum1 = sum1 + *(a + st1);
+	}
+
+	for (j = 1; j <= size; j++)
+	{
+		st2 = (size - 1) * j;
+		sum2 = sum2 + *(a + st2);
+	}
+	printf("%d, %d\n", sum1, sum2);
 }
