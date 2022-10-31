@@ -7,17 +7,18 @@
  * @c: character to receive
  * Return: char
  */
-
 char *_strchr(char *s, char c)
 {
+    int i;
 
-    while (s[0] != '\0')
+    for (i = 0; s[i] != '\0'; i++)
     {
-        if (s[0] == c)
-            return (s);
-        else if (s[1] == c)
-            return (s + 1);
-        s++;
+        if (s[i] == c)
+        {
+            return (s + i);
+        }
     }
-    return (s + 1);
+    if (s[i] == c)
+        return (s + i);
+    return (0);
 }
