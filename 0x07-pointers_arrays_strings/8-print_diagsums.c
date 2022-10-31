@@ -7,6 +7,7 @@
  * @size: The size of the matrix.
  * Return: none
  */
+
 void print_diagsums(int *a, int size)
 {
     int i, sum1 = 0, sum2 = 0;
@@ -24,6 +25,5 @@ void print_diagsums(int *a, int size)
         sum2 += a[i];
         a -= size;
     }
-
     printf("%d, %d\n", sum1, sum2);
 }
