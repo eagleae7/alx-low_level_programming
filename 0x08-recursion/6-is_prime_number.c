@@ -7,7 +7,6 @@
  * @d: int arg
  * Return: sqaure root
  */
-
 int prime_helper(int n, int d)
 {
     if (d >= 1)
@@ -28,7 +27,6 @@ int prime_helper(int n, int d)
  *
  * Return: sqaure root
  */
-
 int is_prime_number(int n)
 {
     if (n == 2)
