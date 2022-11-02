@@ -1,4 +1,5 @@
 #include "main.h"
+#include "math.h"
 
 /**
  * _sqrt_recursion - function that returns the natural
@@ -15,22 +16,22 @@ int _sqrt_recursion(int n)
 		return (1);
 	if (n < 0)
 		return (-1);
-	return (sqrt(n, 1));
+	return (getNumSqr(n, 1));
 }
 
 /**
- * sqrt - function that gets de num of sqroot
+ * getNumSqr - function that gets de num of sqroot
  * @num: input number
  * @i: Counter variable
  * Return: int
  */
 
-int sqrt(int num, int i)
+int getNumSqr(int num, int i)
 {
 	if (num == (i * i))
 		return (i);
 	else if (num > (i * i))
-		return (sqrt(num, i + 1));
+		return (getNumSqr(num, i + 1));
 	else
 		return (-1);
 }
