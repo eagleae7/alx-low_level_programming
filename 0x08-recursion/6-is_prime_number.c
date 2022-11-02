@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * prime_helper - Finds prime numbers
+ * prime_helper - Findsprime numbers
  *
  * @n: int arg
  * @d: int arg

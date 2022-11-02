@@ -2,7 +2,7 @@
 #include "math.h"
 
 /**
- * helper - helps decide if i'm right
+ * helper - helps decide if am right
  * @i: integer to guess
  * @n: integer to get root of
  * Return: value of root
