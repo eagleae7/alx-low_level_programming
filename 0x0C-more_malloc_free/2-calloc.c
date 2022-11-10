@@ -2,50 +2,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _calloc- initializes memory spaces with zero.
- * @nmemb: string 1.
- * @size: string 2, concatenated to 1
- *
- * Return: pointer to the concatenated string.
- */
-
-void *_calloc(unsigned int nmemb, unsigned int size)
-{
-	void *cal;
-
-	if (nmemb == 0 || size == 0)
-		return (NULL);
-	cal = malloc(nmemb * size);
-	if (cal == NULL)
-		return (NULL);
-	_memset(cal, 0, nmemb * size);
-	return (cal);
-}
-
-/**
- * _memset - function that fills memory with a constant byte.
- *
- * @s: mamory area to return
- * @b: constant byte
- * @n: size of bytes
- * Return: char
+ * _calloc - calloc function
+ * @nmemb: number of elements
+ * @size: size of bytes
+ * Return: pointer or void
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	char *t;
 	unsigned int i;
-	char *newArray;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-
-	newArray = malloc(nmemb * size);
-	if (newArray == NULL)
+	t = malloc(nmemb * size);
+	if (t == NULL)
 		return (NULL);
+	for (i = 0; i < nmemb * size; i++)
+		t[i] = 0;
 
-	for (i = 0; i < (nmemb * size); i++)
-	{
-		*(newArray + i) = 0;
-	}
-
-	return (newArray);
+	return (t);
 }
