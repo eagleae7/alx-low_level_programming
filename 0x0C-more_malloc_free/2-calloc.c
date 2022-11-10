@@ -8,24 +8,37 @@
  *
  * Return: pointer to the concatenated string.
  */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *mem;
-	char *n_arry;
-	unsigned int i;
+	void *cal;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-
-	mem = malloc(size * nmemb);
-
-	if (mem == NULL)
+	cal = malloc(nmemb * size);
+	if (cal == NULL)
 		return (NULL);
+	_memset(cal, 0, nmemb * size);
+	return (cal);
+}
 
-	n_arry = mem;
+/**
+ * _memset - function that fills memory with a constant byte.
+ *
+ * @s: mamory area to return
+ * @b: constant byte
+ * @n: size of bytes
+ * Return: char
+ */
 
-	for (i = 0; i < (size * nmemb); i++)
-		n_arry[i] = '\0';
+char *_memset(char *s, char b, unsigned int n)
+{
+	unsigned int i = 0;
 
-	return (mem);
+	while (i < n)
+	{
+		*(s + i) = b;
+		i += 1;
+	}
+	return (s);
 }
