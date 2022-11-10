@@ -30,15 +30,22 @@ void *_calloc(unsigned int nmemb, unsigned int size)
  * @n: size of bytes
  * Return: char
  */
-
-char *_memset(char *s, char b, unsigned int n)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i = 0;
+	unsigned int i;
+	char *newArray;
 
-	while (i < n)
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+
+	newArray = malloc(nmemb * size);
+	if (newArray == NULL)
+		return (NULL);
+
+	for (i = 0; i < (nmemb * size); i++)
 	{
-		*(s + i) = b;
-		i += 1;
+		*(newArray + i) = 0;
 	}
-	return (s);
+
+	return (newArray);
 }
