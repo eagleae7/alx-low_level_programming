@@ -2,7 +2,7 @@
 /**
  * malloc_checked - allocates memory using malloc.
  * @b: size of new memory array.
- * 
+ *
  * Return: the string initialized.
  */
 void *malloc_checked(unsigned int b)
