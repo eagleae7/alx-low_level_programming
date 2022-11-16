@@ -7,7 +7,6 @@
  * @f: input pointer function and execute it
  * Return: nothing
  */
-
 void print_name(char *name, void (*f)(char *))
 {
 	if (name != NULL && f != NULL)
